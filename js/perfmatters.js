@@ -9,6 +9,11 @@ function logCRP() {
   stats.textContent = 'DCL: ' + dcl + 'ms, onload: ' + complete + 'ms';
 }
 
+function addFontLink() {
+
+}
+
 window.addEventListener("load", function(event) {
   logCRP();
+  addFontLink();
 });
