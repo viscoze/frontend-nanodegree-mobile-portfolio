@@ -12,23 +12,34 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/print.css" rel="stylesheet">
-
-    <script>
-      (function(w,g){w['GoogleAnalyticsObject']=g;
-      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
-
-      // Optional TODO: replace with your Google Analytics profile ID.
-      ga('create', 'UA-XXXX-Y');
-      ga('send', 'pageview');
-    </script>
-    <script src="http://www.google-analytics.com/analytics.js"></script>
-    <script async src="js/perfmatters.js"></script>
+    <style>
+      html {
+        font-size: 100%;
+        overflow-y: scroll;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: none;
+      }
+      body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400; }
+      body, button, input, select, textarea { font-family: 'Open Sans', sans-serif; color: #333; }
+    </style>
   </head>
 
   <body>
     <header>
-      <a href="/"><img src="img/profilepic.jpg"></a>
-      <p>Cameron Pittman<br><span>Course Developer</span></p>
+      <div class="cam-info">
+        <a href="/"><img src="img/profilepic.jpg"></a>
+        <p>Cameron Pittman<br><span>Course Developer</span></p>
+      </div>
+
+      <div class="my-info">
+        <a href="http://viscoze.com/"><img src="img/my-pic.jpg"></a>
+        <p>
+          Vlad Oganov<br />
+          <span>vlad.oganov@gmail.com</span><br />
+          <span>+375(29)506-73-45</span>
+        </p>
+      </div>
     </header>
 
     <div class="container">
@@ -67,6 +78,17 @@
       <footer>
         <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
       </footer>
+
+      <script>
+        (function(w,g){w['GoogleAnalyticsObject']=g;
+        w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
+
+        // Optional TODO: replace with your Google Analytics profile ID.
+        ga('create', 'UA-XXXX-Y');
+        ga('send', 'pageview');
+      </script>
+      <script src="http://www.google-analytics.com/analytics.js"></script>
+      <script async src="js/perfmatters.js"></script>
     </div>
   </body>
 </html>
